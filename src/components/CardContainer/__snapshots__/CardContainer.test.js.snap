@@ -1,0 +1,328 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    districts={
+      Object {
+        "ACADEMY20": Object {
+          "active": false,
+          "location": "ACADEMY 20",
+          "stats": Object {
+            "2004": "0.302",
+            "2005": "0.267",
+            "2006": "0.354",
+            "2007": "0.392",
+            "2008": "0.385",
+            "2009": "0.39",
+            "2010": "0.436",
+            "2011": "0.489",
+            "2012": "0.479",
+            "2013": "0.488",
+            "2014": "0.49",
+          },
+        },
+        "ADAMSCOUNTY14": Object {
+          "active": false,
+          "location": "ADAMS COUNTY 14",
+          "stats": Object {
+            "2004": "0.228",
+            "2005": "0.3",
+            "2006": "0.293",
+            "2007": "0.306",
+            "2008": "0.673",
+            "2009": "1",
+            "2010": "1",
+            "2011": "1",
+            "2012": "1",
+            "2013": "0.998",
+            "2014": "1",
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Card
+          active={false}
+          location="ACADEMY 20"
+          stats={
+            Object {
+              "2004": "0.302",
+              "2005": "0.267",
+              "2006": "0.354",
+              "2007": "0.392",
+              "2008": "0.385",
+              "2009": "0.39",
+              "2010": "0.436",
+              "2011": "0.489",
+              "2012": "0.479",
+              "2013": "0.488",
+              "2014": "0.49",
+            }
+          }
+        />,
+        <Card
+          active={false}
+          location="ADAMS COUNTY 14"
+          stats={
+            Object {
+              "2004": "0.228",
+              "2005": "0.3",
+              "2006": "0.293",
+              "2007": "0.306",
+              "2008": "0.673",
+              "2009": "1",
+              "2010": "1",
+              "2011": "1",
+              "2012": "1",
+              "2013": "0.998",
+              "2014": "1",
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "ACADEMY 20",
+        "nodeType": "function",
+        "props": Object {
+          "active": false,
+          "comparison": undefined,
+          "location": "ACADEMY 20",
+          "stats": Object {
+            "2004": "0.302",
+            "2005": "0.267",
+            "2006": "0.354",
+            "2007": "0.392",
+            "2008": "0.385",
+            "2009": "0.39",
+            "2010": "0.436",
+            "2011": "0.489",
+            "2012": "0.479",
+            "2013": "0.488",
+            "2014": "0.49",
+          },
+          "toggleActive": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "ADAMS COUNTY 14",
+        "nodeType": "function",
+        "props": Object {
+          "active": false,
+          "comparison": undefined,
+          "location": "ADAMS COUNTY 14",
+          "stats": Object {
+            "2004": "0.228",
+            "2005": "0.3",
+            "2006": "0.293",
+            "2007": "0.306",
+            "2008": "0.673",
+            "2009": "1",
+            "2010": "1",
+            "2011": "1",
+            "2012": "1",
+            "2013": "0.998",
+            "2014": "1",
+          },
+          "toggleActive": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Card
+            active={false}
+            location="ACADEMY 20"
+            stats={
+              Object {
+                "2004": "0.302",
+                "2005": "0.267",
+                "2006": "0.354",
+                "2007": "0.392",
+                "2008": "0.385",
+                "2009": "0.39",
+                "2010": "0.436",
+                "2011": "0.489",
+                "2012": "0.479",
+                "2013": "0.488",
+                "2014": "0.49",
+              }
+            }
+          />,
+          <Card
+            active={false}
+            location="ADAMS COUNTY 14"
+            stats={
+              Object {
+                "2004": "0.228",
+                "2005": "0.3",
+                "2006": "0.293",
+                "2007": "0.306",
+                "2008": "0.673",
+                "2009": "1",
+                "2010": "1",
+                "2011": "1",
+                "2012": "1",
+                "2013": "0.998",
+                "2014": "1",
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "ACADEMY 20",
+          "nodeType": "function",
+          "props": Object {
+            "active": false,
+            "comparison": undefined,
+            "location": "ACADEMY 20",
+            "stats": Object {
+              "2004": "0.302",
+              "2005": "0.267",
+              "2006": "0.354",
+              "2007": "0.392",
+              "2008": "0.385",
+              "2009": "0.39",
+              "2010": "0.436",
+              "2011": "0.489",
+              "2012": "0.479",
+              "2013": "0.488",
+              "2014": "0.49",
+            },
+            "toggleActive": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "ADAMS COUNTY 14",
+          "nodeType": "function",
+          "props": Object {
+            "active": false,
+            "comparison": undefined,
+            "location": "ADAMS COUNTY 14",
+            "stats": Object {
+              "2004": "0.228",
+              "2005": "0.3",
+              "2006": "0.293",
+              "2007": "0.306",
+              "2008": "0.673",
+              "2009": "1",
+              "2010": "1",
+              "2011": "1",
+              "2012": "1",
+              "2013": "0.998",
+              "2014": "1",
+            },
+            "toggleActive": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
