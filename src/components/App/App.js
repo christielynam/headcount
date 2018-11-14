@@ -38,15 +38,14 @@ class App extends Component {
   }
 
   render() {
-    const { districtStats, comparison } = this.state
+    const { districtStats } = this.state
     return (
       <Main>
         <h1 className='title'>Welcome To Headcount 2.0</h1>
         <CompareContainer districts={districtStats} toggleActive={this.toggleActive} />
         <CardContainer 
           districts={districtStats} 
-          toggleActive={this.toggleActive}
-          comparison={comparison} 
+          toggleActive={this.toggleActive} 
         />
       </Main>
     );
