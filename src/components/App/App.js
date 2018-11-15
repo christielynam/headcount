@@ -8,7 +8,17 @@ import CardContainer from '../CardContainer/CardContainer'
 
 const Main = styled.div`
   min-height: 100vh;
-  background-color: lightgrey
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .search {
+    width: 400px;
+    height: 50px;
+    margin: 20px 0 20px 0;
+    padding-left: 10px;
+    font-size: 20px;
+  }
 `
 
 class App extends Component {
@@ -16,8 +26,16 @@ class App extends Component {
     super()
     this.districtData = new DistrictRepository(kinderData)
     this.state = {
-      districtStats: this.districtData.districts
+      districtStats: this.districtData.districts,
+      query: ''
     }
+  }
+
+  handleChange = (e) => {
+    const { value } = e.target
+    this.setState({ query: value })
+    const searchResults = this.districtData.findAllMatches(value)
+    this.setState({ districtStats: searchResults })
   }
 
   activeCount = () => {
@@ -38,10 +56,17 @@ class App extends Component {
   }
 
   render() {
-    const { districtStats } = this.state
+    const { districtStats, query } = this.state
     return (
       <Main>
         <h1 className='title'>Welcome To Headcount 2.0</h1>
+        <input 
+          type='text' 
+          className='search' 
+          placeholder='Search for a district' 
+          value={query}
+          onChange={this.handleChange} 
+        />
         <CompareContainer districts={districtStats} toggleActive={this.toggleActive} />
         <CardContainer 
           districts={districtStats} 
