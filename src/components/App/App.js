@@ -25,7 +25,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      districtStats: this.districtData.districts,
+      districtStats: {},
       query: ''
     }
   }
@@ -56,6 +56,8 @@ class App extends Component {
 
   componentDidMount() {
     this.districtData = new DistrictRepository(kinderData)
+    const districtStats = this.districtData.districts
+    this.setState({ districtStats })
   }
 
   render() {
