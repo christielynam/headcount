@@ -67,7 +67,10 @@ class App extends Component {
           value={query}
           onChange={this.handleChange} 
         />
-        <CompareContainer districts={districtStats} toggleActive={this.toggleActive} />
+        <CompareContainer 
+          districts={districtStats} 
+          toggleActive={this.toggleActive} 
+        />
         <CardContainer 
           districts={districtStats} 
           toggleActive={this.toggleActive} 

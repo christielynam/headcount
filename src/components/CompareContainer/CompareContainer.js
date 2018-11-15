@@ -14,7 +14,7 @@ const CompareContainer = ({ districts, toggleActive }) => {
   return (
     <ComparisonStyles>
       {displayActives[0]}
-      <ComparisonCard />
+      <ComparisonCard activeCount={activeCards.length} />
       {displayActives[1]}
     </ComparisonStyles>
   )

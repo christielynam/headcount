@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ComparisonCard = () => {
+const ComparisonCard = ({ activeCount }) => {
   return (
-    <div>Comparison Card</div>
+    activeCount === 2 && <div>Comparison Card</div>
   )
 }
 

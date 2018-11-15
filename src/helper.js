@@ -31,5 +31,22 @@ class DistrictRepository {
     return location ? fullDistrictArray.filter(district => district.location.includes(location.toUpperCase())) : fullDistrictArray
   }
 
+  findAverage = (districtName) => {
+    const count = Object.values(this.districts[districtName].stats).length
+    const sum = Object.values(this.districts[districtName].stats).reduce((acc, num) => acc + num)
+    return this.roundToThous(sum / count)
+  }
+
+  compareDistrictAverages = (a, b) => {
+    const district1 = this.findByName(a)
+    const district2 = this.findByName(b)
+    const compared = this.findAverage(district1.location) / this.findAverage(district2.location)
+    return {
+      [district1.location]: this.findAverage(district1.location),
+      [district2.location]: this.findAverage(district2.location),
+      compared: this.roundToThous(compared)
+    }
+  }
+
 }
   export default DistrictRepository

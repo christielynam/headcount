@@ -3,7 +3,47 @@
 exports[`CompareContainer should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CompareContainer />,
+  Symbol(enzyme.__unrendered__): <CompareContainer
+    districts={
+      Object {
+        "ACADEMY20": Object {
+          "active": false,
+          "location": "ACADEMY 20",
+          "stats": Object {
+            "2004": "0.302",
+            "2005": "0.267",
+            "2006": "0.354",
+            "2007": "0.392",
+            "2008": "0.385",
+            "2009": "0.39",
+            "2010": "0.436",
+            "2011": "0.489",
+            "2012": "0.479",
+            "2013": "0.488",
+            "2014": "0.49",
+          },
+        },
+        "ADAMSCOUNTY14": Object {
+          "active": false,
+          "location": "ADAMS COUNTY 14",
+          "stats": Object {
+            "2004": "0.228",
+            "2005": "0.3",
+            "2006": "0.293",
+            "2007": "0.306",
+            "2008": "0.673",
+            "2009": "1",
+            "2010": "1",
+            "2011": "1",
+            "2012": "1",
+            "2013": "0.998",
+            "2014": "1",
+          },
+        },
+      }
+    }
+    toggleactive={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,21 +55,105 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
-    "props": Object {},
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <ComparisonCard
+          activeCount={0}
+        />,
+        undefined,
+      ],
+    },
     "ref": null,
-    "rendered": null,
-    "type": "div",
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeCount": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+  display: flex;
+  justify-content: space-evenly
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
-      "props": Object {},
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <ComparisonCard
+            activeCount={0}
+          />,
+          undefined,
+        ],
+      },
       "ref": null,
-      "rendered": null,
-      "type": "div",
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeCount": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  justify-content: space-evenly
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
