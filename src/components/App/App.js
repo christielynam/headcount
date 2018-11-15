@@ -24,7 +24,6 @@ const Main = styled.div`
 class App extends Component {
   constructor() {
     super()
-    this.districtData = new DistrictRepository(kinderData)
     this.state = {
       districtStats: this.districtData.districts,
       query: ''
@@ -53,6 +52,10 @@ class App extends Component {
         districtStats: {...districtStats, [location]: updatedDistrict}
       })
     } 
+  }
+
+  componentDidMount() {
+    this.districtData = new DistrictRepository(kinderData)
   }
 
   render() {
