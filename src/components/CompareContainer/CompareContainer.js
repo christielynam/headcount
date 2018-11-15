@@ -8,13 +8,18 @@ const ComparisonStyles = styled.div`
   justify-content: space-evenly
 `
 
-const CompareContainer = ({ districts, toggleActive }) => {
+const CompareContainer = ({ districts, toggleActive, findAverage, compareAverages }) => {
   const activeCards = Object.values(districts).filter(district => district.active)
   const displayActives = activeCards.map(card => <Card {...card} key={card.location} toggleActive={toggleActive} />)
   return (
     <ComparisonStyles>
       {displayActives[0]}
-      <ComparisonCard activeCount={activeCards.length} />
+      <ComparisonCard 
+        findAverage={findAverage}
+        compareAverages={compareAverages} 
+        activeCards={activeCards} 
+        activeCount={activeCards.length} 
+      />
       {displayActives[1]}
     </ComparisonStyles>
   )

@@ -72,7 +72,9 @@ class App extends Component {
           value={query}
           onChange={this.handleChange} 
         />
-        <CompareContainer 
+        <CompareContainer
+          findAverage={this.districtData && this.districtData.findAverage}
+          compareAverages={this.districtData && this.districtData.compareDistrictAverages}
           districts={districtStats} 
           toggleActive={this.toggleActive} 
         />

@@ -9,7 +9,7 @@ class DistrictRepository {
         acc[obj.Location] = {
           location: obj.Location.toUpperCase(),
           stats: {},
-          active: false
+          active: false, 
         }
       }
       acc[obj.Location].stats[obj.TimeFrame] = this.roundToThous(obj.Data)
