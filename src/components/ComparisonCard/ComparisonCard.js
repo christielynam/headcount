@@ -27,7 +27,7 @@ const ComparisonCard = ({ activeCount, activeCards, findAverage, compareAverages
         <h4>{activeCards[0].location}</h4>
         <p>{findAverage(activeCards[0].location)}</p>
       </div>
-      <div className='compare'>-----{average.compared}-----</div>
+      <div className='compare'>-----{average && average.compared}-----</div>
       <div className='district'>
         <h4>{activeCards[1].location}</h4>
         <p>{findAverage(activeCards[1].location)}</p>
@@ -37,8 +37,8 @@ const ComparisonCard = ({ activeCount, activeCards, findAverage, compareAverages
 }
 
 ComparisonCard.propTypes = {
-  activeCount: PropTypes.number.isRequired,
-  activeCards: PropTypes.array.isRequired,
+  activeCount: PropTypes.number,
+  activeCards: PropTypes.array,
   findAverage: PropTypes.func,
   compareAverages: PropTypes.func
 }

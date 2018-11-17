@@ -28,7 +28,7 @@ const CardContainer = ({ districts, toggleActive }) => {
 
 CardContainer.propTypes = {
   districts: PropTypes.object.isRequired,
-  toggleActive: PropTypes.func.isRequired
+  toggleActive: PropTypes.func
 }
 
 export default CardContainer

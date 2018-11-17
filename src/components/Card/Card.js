@@ -27,7 +27,7 @@ Card.propTypes = {
   location: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
   active: PropTypes.bool.isRequired,
-  toggleActive: PropTypes.func.isRequired
+  toggleActive: PropTypes.func
 }
 
 export default Card

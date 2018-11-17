@@ -4,6 +4,7 @@ exports[`CompareContainer should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CompareContainer
+    compareAverages={[MockFunction]}
     districts={
       Object {
         "ACADEMY20": Object {
@@ -42,6 +43,7 @@ ShallowWrapper {
         },
       }
     }
+    findAverage={[MockFunction]}
     toggleactive={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -60,7 +62,10 @@ ShallowWrapper {
       "children": Array [
         undefined,
         <ComparisonCard
+          activeCards={Array []}
           activeCount={0}
+          compareAverages={[MockFunction]}
+          findAverage={[MockFunction]}
         />,
         undefined,
       ],
@@ -73,7 +78,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "activeCards": Array [],
           "activeCount": 0,
+          "compareAverages": [MockFunction],
+          "findAverage": [MockFunction],
         },
         "ref": null,
         "rendered": null,
@@ -85,7 +93,7 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-bdVaJa",
+        "componentId": "sc-bwzfXH",
         "isStatic": true,
         "rules": Array [
           "
@@ -96,7 +104,7 @@ ShallowWrapper {
       },
       "displayName": "styled.div",
       "render": [Function],
-      "styledComponentId": "sc-bdVaJa",
+      "styledComponentId": "sc-bwzfXH",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -112,7 +120,10 @@ ShallowWrapper {
         "children": Array [
           undefined,
           <ComparisonCard
+            activeCards={Array []}
             activeCount={0}
+            compareAverages={[MockFunction]}
+            findAverage={[MockFunction]}
           />,
           undefined,
         ],
@@ -125,7 +136,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "activeCards": Array [],
             "activeCount": 0,
+            "compareAverages": [MockFunction],
+            "findAverage": [MockFunction],
           },
           "ref": null,
           "rendered": null,
@@ -137,7 +151,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-bdVaJa",
+          "componentId": "sc-bwzfXH",
           "isStatic": true,
           "rules": Array [
             "
@@ -148,7 +162,7 @@ ShallowWrapper {
         },
         "displayName": "styled.div",
         "render": [Function],
-        "styledComponentId": "sc-bdVaJa",
+        "styledComponentId": "sc-bwzfXH",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],

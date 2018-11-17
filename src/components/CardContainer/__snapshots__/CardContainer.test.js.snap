@@ -105,7 +105,6 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "active": false,
-          "comparison": undefined,
           "location": "ACADEMY 20",
           "stats": Object {
             "2004": "0.302",
@@ -132,7 +131,6 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "active": false,
-          "comparison": undefined,
           "location": "ADAMS COUNTY 14",
           "stats": Object {
             "2004": "0.228",
@@ -233,7 +231,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "active": false,
-            "comparison": undefined,
             "location": "ACADEMY 20",
             "stats": Object {
               "2004": "0.302",
@@ -260,7 +257,6 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "active": false,
-            "comparison": undefined,
             "location": "ADAMS COUNTY 14",
             "stats": Object {
               "2004": "0.228",

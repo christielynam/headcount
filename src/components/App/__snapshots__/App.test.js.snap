@@ -31,6 +31,7 @@ ShallowWrapper {
           value=""
         />,
         <CompareContainer
+          compareAverages={[Function]}
           districts={
             Object {
               "ACADEMY 20": Object {
@@ -3112,6 +3113,7 @@ ShallowWrapper {
               },
             }
           }
+          findAverage={[Function]}
           toggleActive={[Function]}
         />,
         <CardContainer
@@ -6234,6 +6236,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "compareAverages": [Function],
           "districts": Object {
             "ACADEMY 20": Object {
               "active": false,
@@ -9313,6 +9316,7 @@ ShallowWrapper {
               },
             },
           },
+          "findAverage": [Function],
           "toggleActive": [Function],
         },
         "ref": null,
@@ -12414,7 +12418,7 @@ ShallowWrapper {
       "$$typeof": Symbol(react.forward_ref),
       "attrs": Array [],
       "componentStyle": ComponentStyle {
-        "componentId": "sc-htpNat",
+        "componentId": "sc-bxivhb",
         "isStatic": true,
         "rules": Array [
           "
@@ -12435,7 +12439,7 @@ ShallowWrapper {
       },
       "displayName": "styled.div",
       "render": [Function],
-      "styledComponentId": "sc-htpNat",
+      "styledComponentId": "sc-bxivhb",
       "target": "div",
       "toString": [Function],
       "warnTooManyClasses": [Function],
@@ -12462,6 +12466,7 @@ ShallowWrapper {
             value=""
           />,
           <CompareContainer
+            compareAverages={[Function]}
             districts={
               Object {
                 "ACADEMY 20": Object {
@@ -15543,6 +15548,7 @@ ShallowWrapper {
                 },
               }
             }
+            findAverage={[Function]}
             toggleActive={[Function]}
           />,
           <CardContainer
@@ -18665,6 +18671,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "compareAverages": [Function],
             "districts": Object {
               "ACADEMY 20": Object {
                 "active": false,
@@ -21744,6 +21751,7 @@ ShallowWrapper {
                 },
               },
             },
+            "findAverage": [Function],
             "toggleActive": [Function],
           },
           "ref": null,
@@ -24845,7 +24853,7 @@ ShallowWrapper {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-htpNat",
+          "componentId": "sc-bxivhb",
           "isStatic": true,
           "rules": Array [
             "
@@ -24866,7 +24874,7 @@ ShallowWrapper {
         },
         "displayName": "styled.div",
         "render": [Function],
-        "styledComponentId": "sc-htpNat",
+        "styledComponentId": "sc-bxivhb",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
