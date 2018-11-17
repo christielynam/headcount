@@ -1,7 +1,8 @@
 import React from 'react'
 import './Card.css'
+import PropTypes from 'prop-types'
 
-const Card = ({ location, stats, active, toggleActive, comparison }) => {
+const Card = ({ location, stats, active, toggleActive }) => {
   const displayStats = Object.entries(stats).map(year => (
     <li 
       key={year[0]}
@@ -20,6 +21,13 @@ const Card = ({ location, stats, active, toggleActive, comparison }) => {
     </div>
   )
 
+}
+
+Card.propTypes = {
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+  active: PropTypes.bool.isRequired,
+  toggleActive: PropTypes.func.isRequired
 }
 
 export default Card

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const ComparisonCardStyles = styled.div`
   display: flex;
@@ -33,6 +34,13 @@ const ComparisonCard = ({ activeCount, activeCards, findAverage, compareAverages
       </div>
     </ComparisonCardStyles>
   )
+}
+
+ComparisonCard.propTypes = {
+  activeCount: PropTypes.number.isRequired,
+  activeCards: PropTypes.array.isRequired,
+  findAverage: PropTypes.func,
+  compareAverages: PropTypes.func
 }
 
 export default ComparisonCard

@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../Card/Card'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const DistrictContainer = styled.div`
   display: flex;
@@ -9,11 +10,10 @@ const DistrictContainer = styled.div`
   padding: 20px;
 `
 
-const CardContainer = ({ districts, comparison, toggleActive }) => {
+const CardContainer = ({ districts, toggleActive }) => {
   const displayDistricts = Object.values(districts).map(district => (
     <Card 
       {...district} 
-      comparison={comparison}
       toggleActive={toggleActive} 
       key={district.location} 
     />
@@ -25,5 +25,10 @@ const CardContainer = ({ districts, comparison, toggleActive }) => {
     </DistrictContainer>
   )
 }   
+
+CardContainer.propTypes = {
+  districts: PropTypes.object.isRequired,
+  toggleActive: PropTypes.func.isRequired
+}
 
 export default CardContainer
