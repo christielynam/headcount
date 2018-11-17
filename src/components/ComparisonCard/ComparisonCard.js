@@ -2,7 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ComparisonCardStyles = styled.div`
-  display: flex
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  p {
+    text-align: center
+  }
 `
 
 const ComparisonCard = ({ activeCount, activeCards, findAverage, compareAverages }) => {
@@ -19,7 +26,7 @@ const ComparisonCard = ({ activeCount, activeCards, findAverage, compareAverages
         <h4>{activeCards[0].location}</h4>
         <p>{findAverage(activeCards[0].location)}</p>
       </div>
-      <div className='compare'>--{average.compared}--</div>
+      <div className='compare'>-----{average.compared}-----</div>
       <div className='district'>
         <h4>{activeCards[1].location}</h4>
         <p>{findAverage(activeCards[1].location)}</p>
