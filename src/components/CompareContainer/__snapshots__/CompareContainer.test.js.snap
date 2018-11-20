@@ -8,7 +8,7 @@ ShallowWrapper {
     districts={
       Object {
         "ACADEMY20": Object {
-          "active": false,
+          "active": true,
           "location": "ACADEMY 20",
           "stats": Object {
             "2004": "0.302",
@@ -25,7 +25,7 @@ ShallowWrapper {
           },
         },
         "ADAMSCOUNTY14": Object {
-          "active": false,
+          "active": true,
           "location": "ADAMS COUNTY 14",
           "stats": Object {
             "2004": "0.228",
@@ -60,26 +60,159 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        undefined,
+        <Card
+          active={true}
+          location="ACADEMY 20"
+          stats={
+            Object {
+              "2004": "0.302",
+              "2005": "0.267",
+              "2006": "0.354",
+              "2007": "0.392",
+              "2008": "0.385",
+              "2009": "0.39",
+              "2010": "0.436",
+              "2011": "0.489",
+              "2012": "0.479",
+              "2013": "0.488",
+              "2014": "0.49",
+            }
+          }
+        />,
         <ComparisonCard
-          activeCards={Array []}
-          activeCount={0}
+          activeCards={
+            Array [
+              Object {
+                "active": true,
+                "location": "ACADEMY 20",
+                "stats": Object {
+                  "2004": "0.302",
+                  "2005": "0.267",
+                  "2006": "0.354",
+                  "2007": "0.392",
+                  "2008": "0.385",
+                  "2009": "0.39",
+                  "2010": "0.436",
+                  "2011": "0.489",
+                  "2012": "0.479",
+                  "2013": "0.488",
+                  "2014": "0.49",
+                },
+              },
+              Object {
+                "active": true,
+                "location": "ADAMS COUNTY 14",
+                "stats": Object {
+                  "2004": "0.228",
+                  "2005": "0.3",
+                  "2006": "0.293",
+                  "2007": "0.306",
+                  "2008": "0.673",
+                  "2009": "1",
+                  "2010": "1",
+                  "2011": "1",
+                  "2012": "1",
+                  "2013": "0.998",
+                  "2014": "1",
+                },
+              },
+            ]
+          }
+          activeCount={2}
           compareAverages={[MockFunction]}
           findAverage={[MockFunction]}
         />,
-        undefined,
+        <Card
+          active={true}
+          location="ADAMS COUNTY 14"
+          stats={
+            Object {
+              "2004": "0.228",
+              "2005": "0.3",
+              "2006": "0.293",
+              "2007": "0.306",
+              "2008": "0.673",
+              "2009": "1",
+              "2010": "1",
+              "2011": "1",
+              "2012": "1",
+              "2013": "0.998",
+              "2014": "1",
+            }
+          }
+        />,
       ],
     },
     "ref": null,
     "rendered": Array [
-      undefined,
+      Object {
+        "instance": null,
+        "key": "ACADEMY 20",
+        "nodeType": "function",
+        "props": Object {
+          "active": true,
+          "location": "ACADEMY 20",
+          "stats": Object {
+            "2004": "0.302",
+            "2005": "0.267",
+            "2006": "0.354",
+            "2007": "0.392",
+            "2008": "0.385",
+            "2009": "0.39",
+            "2010": "0.436",
+            "2011": "0.489",
+            "2012": "0.479",
+            "2013": "0.488",
+            "2014": "0.49",
+          },
+          "toggleActive": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "activeCards": Array [],
-          "activeCount": 0,
+          "activeCards": Array [
+            Object {
+              "active": true,
+              "location": "ACADEMY 20",
+              "stats": Object {
+                "2004": "0.302",
+                "2005": "0.267",
+                "2006": "0.354",
+                "2007": "0.392",
+                "2008": "0.385",
+                "2009": "0.39",
+                "2010": "0.436",
+                "2011": "0.489",
+                "2012": "0.479",
+                "2013": "0.488",
+                "2014": "0.49",
+              },
+            },
+            Object {
+              "active": true,
+              "location": "ADAMS COUNTY 14",
+              "stats": Object {
+                "2004": "0.228",
+                "2005": "0.3",
+                "2006": "0.293",
+                "2007": "0.306",
+                "2008": "0.673",
+                "2009": "1",
+                "2010": "1",
+                "2011": "1",
+                "2012": "1",
+                "2013": "0.998",
+                "2014": "1",
+              },
+            },
+          ],
+          "activeCount": 2,
           "compareAverages": [MockFunction],
           "findAverage": [MockFunction],
         },
@@ -87,7 +220,32 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      undefined,
+      Object {
+        "instance": null,
+        "key": "ADAMS COUNTY 14",
+        "nodeType": "function",
+        "props": Object {
+          "active": true,
+          "location": "ADAMS COUNTY 14",
+          "stats": Object {
+            "2004": "0.228",
+            "2005": "0.3",
+            "2006": "0.293",
+            "2007": "0.306",
+            "2008": "0.673",
+            "2009": "1",
+            "2010": "1",
+            "2011": "1",
+            "2012": "1",
+            "2013": "0.998",
+            "2014": "1",
+          },
+          "toggleActive": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": Object {
       "$$typeof": Symbol(react.forward_ref),
@@ -118,26 +276,159 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          undefined,
+          <Card
+            active={true}
+            location="ACADEMY 20"
+            stats={
+              Object {
+                "2004": "0.302",
+                "2005": "0.267",
+                "2006": "0.354",
+                "2007": "0.392",
+                "2008": "0.385",
+                "2009": "0.39",
+                "2010": "0.436",
+                "2011": "0.489",
+                "2012": "0.479",
+                "2013": "0.488",
+                "2014": "0.49",
+              }
+            }
+          />,
           <ComparisonCard
-            activeCards={Array []}
-            activeCount={0}
+            activeCards={
+              Array [
+                Object {
+                  "active": true,
+                  "location": "ACADEMY 20",
+                  "stats": Object {
+                    "2004": "0.302",
+                    "2005": "0.267",
+                    "2006": "0.354",
+                    "2007": "0.392",
+                    "2008": "0.385",
+                    "2009": "0.39",
+                    "2010": "0.436",
+                    "2011": "0.489",
+                    "2012": "0.479",
+                    "2013": "0.488",
+                    "2014": "0.49",
+                  },
+                },
+                Object {
+                  "active": true,
+                  "location": "ADAMS COUNTY 14",
+                  "stats": Object {
+                    "2004": "0.228",
+                    "2005": "0.3",
+                    "2006": "0.293",
+                    "2007": "0.306",
+                    "2008": "0.673",
+                    "2009": "1",
+                    "2010": "1",
+                    "2011": "1",
+                    "2012": "1",
+                    "2013": "0.998",
+                    "2014": "1",
+                  },
+                },
+              ]
+            }
+            activeCount={2}
             compareAverages={[MockFunction]}
             findAverage={[MockFunction]}
           />,
-          undefined,
+          <Card
+            active={true}
+            location="ADAMS COUNTY 14"
+            stats={
+              Object {
+                "2004": "0.228",
+                "2005": "0.3",
+                "2006": "0.293",
+                "2007": "0.306",
+                "2008": "0.673",
+                "2009": "1",
+                "2010": "1",
+                "2011": "1",
+                "2012": "1",
+                "2013": "0.998",
+                "2014": "1",
+              }
+            }
+          />,
         ],
       },
       "ref": null,
       "rendered": Array [
-        undefined,
+        Object {
+          "instance": null,
+          "key": "ACADEMY 20",
+          "nodeType": "function",
+          "props": Object {
+            "active": true,
+            "location": "ACADEMY 20",
+            "stats": Object {
+              "2004": "0.302",
+              "2005": "0.267",
+              "2006": "0.354",
+              "2007": "0.392",
+              "2008": "0.385",
+              "2009": "0.39",
+              "2010": "0.436",
+              "2011": "0.489",
+              "2012": "0.479",
+              "2013": "0.488",
+              "2014": "0.49",
+            },
+            "toggleActive": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "activeCards": Array [],
-            "activeCount": 0,
+            "activeCards": Array [
+              Object {
+                "active": true,
+                "location": "ACADEMY 20",
+                "stats": Object {
+                  "2004": "0.302",
+                  "2005": "0.267",
+                  "2006": "0.354",
+                  "2007": "0.392",
+                  "2008": "0.385",
+                  "2009": "0.39",
+                  "2010": "0.436",
+                  "2011": "0.489",
+                  "2012": "0.479",
+                  "2013": "0.488",
+                  "2014": "0.49",
+                },
+              },
+              Object {
+                "active": true,
+                "location": "ADAMS COUNTY 14",
+                "stats": Object {
+                  "2004": "0.228",
+                  "2005": "0.3",
+                  "2006": "0.293",
+                  "2007": "0.306",
+                  "2008": "0.673",
+                  "2009": "1",
+                  "2010": "1",
+                  "2011": "1",
+                  "2012": "1",
+                  "2013": "0.998",
+                  "2014": "1",
+                },
+              },
+            ],
+            "activeCount": 2,
             "compareAverages": [MockFunction],
             "findAverage": [MockFunction],
           },
@@ -145,7 +436,32 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        undefined,
+        Object {
+          "instance": null,
+          "key": "ADAMS COUNTY 14",
+          "nodeType": "function",
+          "props": Object {
+            "active": true,
+            "location": "ADAMS COUNTY 14",
+            "stats": Object {
+              "2004": "0.228",
+              "2005": "0.3",
+              "2006": "0.293",
+              "2007": "0.306",
+              "2008": "0.673",
+              "2009": "1",
+              "2010": "1",
+              "2011": "1",
+              "2012": "1",
+              "2013": "0.998",
+              "2014": "1",
+            },
+            "toggleActive": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
