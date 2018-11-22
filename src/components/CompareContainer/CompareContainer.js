@@ -30,7 +30,7 @@ const CompareContainer = ({ districts, toggleActive, findAverage, compareAverage
 }
 
 CompareContainer.propTypes = {
-  districts: PropTypes.object,
+  districts: PropTypes.any,
   toggleActive: PropTypes.func,
   findAverage: PropTypes.func,
   compareAverages: PropTypes.func
