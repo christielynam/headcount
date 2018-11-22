@@ -30,6 +30,7 @@ class App extends Component {
     }
   }
 
+  // search functionality
   handleChange = (e) => {
     const { value } = e.target
     this.setState({ query: value })
@@ -37,6 +38,7 @@ class App extends Component {
     this.setState({ districtStats: searchResults })
   }
 
+  // count cards with an active status
   activeCount = () => {
     const active = Object.values(this.state.districtStats).filter(district => district.active)
     return active.length
@@ -45,6 +47,9 @@ class App extends Component {
   toggleActive = (location) => {
     const { districtStats } = this.state
     const selectedDistrict = districtStats[location]
+    // TODO Is there a way I can use findByName here? 
+    // const selectedDistrict = this.districtData.findByName(location)
+    console.log(selectedDistrict)
     const count = this.activeCount()
     if(count < 2 || selectedDistrict.active) {
       const updatedDistrict = {...selectedDistrict, active: !selectedDistrict.active}
