@@ -13,7 +13,10 @@ const Card = ({ location, stats, active, toggleActive }) => {
   ))
 
   return (
-    <div className={active ? 'active card' : 'card'} onClick={() => toggleActive(location)}>
+    <div 
+      className={active ? 'active card' : 'card'} 
+      onClick={() => toggleActive(location)}
+    >
       <h4>{location}</h4>
       <ul className='list'>
         {displayStats}

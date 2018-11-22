@@ -19,6 +19,21 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should just have a className of card if the card is not active', () => {
+    const card = wrapper.find('.card')
+
+    expect(card.hasClass('card')).toBe(true)
+    expect(card.hasClass('active')).toBe(false)
+  })
+
+  it('should have a className of card and active if the card is active', () => {
+    wrapper = shallow(<Card location={mockLocation} active={true} stats={mockStats} toggleActive={mockToggleActive} />)
+    const card = wrapper.find('.card')
+    
+    expect(card.hasClass('card')).toBe(true)
+    expect(card.hasClass('active')).toBe(true)
+  })
+
   it('should call toggleActive when a card is clicked', () => {
     const card = wrapper.find('.card')
 
