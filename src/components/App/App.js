@@ -47,9 +47,11 @@ class App extends Component {
   toggleActive = (location) => {
     const { districtStats } = this.state
     const selectedDistrict = districtStats[location]
-    // TODO Is there a way I can use findByName here? 
-    // const selectedDistrict = this.districtData.findByName(location)
     console.log(selectedDistrict)
+    // TODO Is there a way I can use findByName here? 
+    const selectedDistrict2 = this.districtData.findByName(location)
+    // debugger
+    console.log(selectedDistrict2)
     const count = this.activeCount()
     if(count < 2 || selectedDistrict.active) {
       const updatedDistrict = {...selectedDistrict, active: !selectedDistrict.active}

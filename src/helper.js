@@ -5,14 +5,15 @@ class DistrictRepository {
 
   formatData = (kinderData) => {
     return kinderData.reduce((acc, obj) => {
-      if(!acc[obj.Location]) {
-        acc[obj.Location] = {
+      const key = obj.Location.toUpperCase()
+      if(!acc[key]) {
+        acc[key] = {
           location: obj.Location.toUpperCase(),
           stats: {},
           active: false, 
         }
       }
-      acc[obj.Location].stats[obj.TimeFrame] = this.roundToThous(obj.Data)
+      acc[key].stats[obj.TimeFrame] = this.roundToThous(obj.Data)
       return acc
     }, {})
   }
