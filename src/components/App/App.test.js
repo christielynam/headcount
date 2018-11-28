@@ -25,7 +25,7 @@ describe('App', () => {
   it('activeCount should return the number of districts with the active status', () => {
     const mockDistricts = {'ACADEMY 20': {location: 'ACADEMY20', active: false, stats: {}}, 'AGATE 300': {location: 'AGATE 300', active: true, stats: {}}, 'ASPEN 1': {location: 'ASPEN 1', active: true, stats: {}}}
 
-    wrapper.setState({districtStats: mockDistricts})
+    wrapper.setState({districts: mockDistricts})
 
     const results = wrapper.instance().activeCount()
     const expected = 2
@@ -38,16 +38,16 @@ describe('App', () => {
 
     const expected = {'ACADEMY 20': {location: 'ACADEMY20', active: false, stats: {}}, 'AGATE 300': {location: 'AGATE 300', active: false, stats: {}}, 'ASPEN 1': {location: 'ASPEN 1', active: true, stats: {}}}
 
-    wrapper.setState({districtStats: mockDistricts})
+    wrapper.setState({districts: mockDistricts})
     wrapper.instance().toggleActive('ASPEN 1')
 
-    expect(wrapper.state('districtStats')).toEqual(expected)
+    expect(wrapper.state('districts')).toEqual(expected)
 
     wrapper.instance().toggleActive('ACADEMY 20')
 
     const expected2 = {'ACADEMY 20': {location: 'ACADEMY20', active: true, stats: {}}, 'AGATE 300': {location: 'AGATE 300', active: false, stats: {}}, 'ASPEN 1': {location: 'ASPEN 1', active: true, stats: {}}}
 
-    expect(wrapper.state('districtStats')).toEqual(expected2)
+    expect(wrapper.state('districts')).toEqual(expected2)
   })
 
   it('does not toggle the active status from false to true on a district if there are already 2 active districts', () => {
@@ -64,9 +64,9 @@ describe('App', () => {
 
     const expected = {'ACADEMY 20': {location: 'ACADEMY20', active: true, stats: {}}, 'AGATE 300': {location: 'AGATE 300', active: false, stats: {}}, 'ASPEN 1': {location: 'ASPEN 1', active: false, stats: {}}}
 
-    wrapper.setState({districtStats: mockDistricts})
+    wrapper.setState({districts: mockDistricts})
     wrapper.instance().toggleActive('ASPEN 1')
 
-    expect(wrapper.state('districtStats')).toEqual(expected)
+    expect(wrapper.state('districts')).toEqual(expected)
   })
 })
