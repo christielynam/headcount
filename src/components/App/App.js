@@ -25,50 +25,47 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      districtStats: {},
+      districtRepository: {},
+      districts: {},
       query: ''
     }
   }
 
-  // search functionality
   handleChange = (e) => {
+    const { districtRepository } = this.state
     const { value } = e.target
     this.setState({ query: value })
-    const searchResults = this.districtData.findAllMatches(value)
-    this.setState({ districtStats: searchResults })
+    const searchResults = districtRepository.findAllMatches(value)
+    this.setState({ districts: searchResults })
   }
 
-  // count cards with an active status
   activeCount = () => {
-    const active = Object.values(this.state.districtStats).filter(district => district.active)
+    const active = Object.values(this.state.districts).filter(district => district.active)
     return active.length
   }
 
   toggleActive = (location) => {
-    const { districtStats } = this.state
-    const selectedDistrict = districtStats[location]
-    console.log(selectedDistrict)
-    // TODO Is there a way I can use findByName here? 
-    const selectedDistrict2 = this.districtData.findByName(location)
-    // debugger
-    console.log(selectedDistrict2)
+    const { districts } = this.state
+    const selectedDistrict = districts[location]
     const count = this.activeCount()
     if(count < 2 || selectedDistrict.active) {
       const updatedDistrict = {...selectedDistrict, active: !selectedDistrict.active}
       this.setState({
-        districtStats: {...districtStats, [location]: updatedDistrict}
+        districts: {...districts, [location]: updatedDistrict} 
       })
     } 
   }
 
   componentDidMount() {
-    this.districtData = new DistrictRepository(kinderData)
-    const districtStats = this.districtData.districts
-    this.setState({ districtStats })
+    const districtRepository = new DistrictRepository(kinderData)
+    this.setState({ 
+      districtRepository, 
+      districts: districtRepository.districts 
+    })
   }
 
   render() {
-    const { districtStats, query } = this.state
+    const { districtRepository: {findAverage, compareDistrictAverages}, districts, query } = this.state
     return (
       <Main>
         <h1 className='title'>Welcome To Headcount 2.0</h1>
@@ -80,13 +77,13 @@ class App extends Component {
           onChange={this.handleChange} 
         />
         <CompareContainer
-          findAverage={this.districtData && this.districtData.findAverage}
-          compareAverages={this.districtData && this.districtData.compareDistrictAverages}
-          districts={districtStats} 
+          findAverage={findAverage}
+          compareAverages={compareDistrictAverages}
+          districts={districts} 
           toggleActive={this.toggleActive} 
         />
         <CardContainer 
-          districts={districtStats} 
+          districts={districts} 
           toggleActive={this.toggleActive} 
         />
       </Main>
