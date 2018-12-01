@@ -19,6 +19,24 @@ describe('Card', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('year should have a className of low if the percerntage is < .05', () => {
+    mockStats = {2005: 0.35}
+    wrapper = shallow(<Card location={mockLocation} active={false} stats={mockStats} toggleActive={mockToggleActive} />)
+    const year = wrapper.find('li')
+
+    expect(year.hasClass('low')).toBe(true)
+    expect(year.hasClass('high')).toBe(false)
+  })
+
+  it('year should have a className of high if the percerntage is > .05', () => {
+    mockStats = {2005: 0.65}
+    wrapper = shallow(<Card location={mockLocation} active={false} stats={mockStats} toggleActive={mockToggleActive} />)
+    const year = wrapper.find('li')
+
+    expect(year.hasClass('high')).toBe(true)
+    expect(year.hasClass('low')).toBe(false)
+  })
+
   it('should just have a className of card if the card is not active', () => {
     const card = wrapper.find('.card')
 
