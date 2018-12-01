@@ -53,10 +53,10 @@ describe('App', () => {
   it('does not toggle the active status from false to true on a district if there are already 2 active districts', () => {
     const mockDistricts = {'ACADEMY 20': {location: 'ACADEMY20', active: true, stats: {}}, 'AGATE 300': {location: 'AGATE 300', active: false, stats: {}}, 'ASPEN 1': {location: 'ASPEN 1', active: true, stats: {}}}
 
-    wrapper.setState({districtStats: mockDistricts})
+    wrapper.setState({districts: mockDistricts})
     wrapper.instance().toggleActive('AGATE 300')
 
-    expect(wrapper.state('districtStats')).toEqual(mockDistricts)
+    expect(wrapper.state('districts')).toEqual(mockDistricts)
   })
 
   it('toggles a districts active status to false if active is true', () => {
@@ -69,6 +69,4 @@ describe('App', () => {
 
     expect(wrapper.state('districts')).toEqual(expected)
   })
-
-  
 })
