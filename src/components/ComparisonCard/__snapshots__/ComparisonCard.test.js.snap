@@ -84,11 +84,68 @@ ShallowWrapper {
             "2014": "0.49",
           },
         },
+        Object {
+          "active": true,
+          "location": "ADAMS COUNTY 14",
+          "stats": Object {
+            "2004": "0.228",
+            "2005": "0.3",
+            "2006": "0.293",
+            "2007": "0.306",
+            "2008": "0.673",
+            "2009": "1",
+            "2010": "1",
+            "2011": "1",
+            "2012": "1",
+            "2013": "0.998",
+            "2014": "1",
+          },
+        },
       ]
     }
-    activeCount={1}
-    compareAverages={[MockFunction]}
-    findAverage={[MockFunction]}
+    activeCount={2}
+    compareAverages={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "ACADEMY 20",
+            "ADAMS COUNTY 14",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Object {
+              "ACADEMY 20": 0.407,
+              "ADAMS COUNTY 14": 0.709,
+              "compared": 0.574,
+            },
+          },
+        ],
+      }
+    }
+    findAverage={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "ACADEMY 20",
+          ],
+          Array [
+            "ADAMS COUNTY 14",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -98,9 +155,331 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
-  Symbol(enzyme.__node__): false,
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="district"
+        >
+          <h4>
+            ACADEMY 20
+          </h4>
+          <p />
+        </div>,
+        <div
+          className="compare"
+        >
+          -----
+          0.574
+          -----
+        </div>,
+        <div
+          className="district"
+        >
+          <h4>
+            ADAMS COUNTY 14
+          </h4>
+          <p />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              ACADEMY 20
+            </h4>,
+            <p />,
+          ],
+          "className": "district",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ACADEMY 20",
+            },
+            "ref": null,
+            "rendered": "ACADEMY 20",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "-----",
+            0.574,
+            "-----",
+          ],
+          "className": "compare",
+        },
+        "ref": null,
+        "rendered": Array [
+          "-----",
+          0.574,
+          "-----",
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              ADAMS COUNTY 14
+            </h4>,
+            <p />,
+          ],
+          "className": "district",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ADAMS COUNTY 14",
+            },
+            "ref": null,
+            "rendered": "ADAMS COUNTY 14",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": true,
+        "rules": Array [
+          "
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  p {
+    text-align: center
+  }
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "render": [Function],
+      "styledComponentId": "sc-bdVaJa",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
   Symbol(enzyme.__nodes__): Array [
-    false,
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="district"
+          >
+            <h4>
+              ACADEMY 20
+            </h4>
+            <p />
+          </div>,
+          <div
+            className="compare"
+          >
+            -----
+            0.574
+            -----
+          </div>,
+          <div
+            className="district"
+          >
+            <h4>
+              ADAMS COUNTY 14
+            </h4>
+            <p />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                ACADEMY 20
+              </h4>,
+              <p />,
+            ],
+            "className": "district",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ACADEMY 20",
+              },
+              "ref": null,
+              "rendered": "ACADEMY 20",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "-----",
+              0.574,
+              "-----",
+            ],
+            "className": "compare",
+          },
+          "ref": null,
+          "rendered": Array [
+            "-----",
+            0.574,
+            "-----",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                ADAMS COUNTY 14
+              </h4>,
+              <p />,
+            ],
+            "className": "district",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ADAMS COUNTY 14",
+              },
+              "ref": null,
+              "rendered": "ADAMS COUNTY 14",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  p {
+    text-align: center
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
