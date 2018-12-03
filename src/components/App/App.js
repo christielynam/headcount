@@ -24,26 +24,26 @@ const Main = styled.div`
 class App extends Component {
   constructor() {
     super()
+    this.districtRepository = new DistrictRepository(kinderData)
     this.state = {
-      districtRepository: {},
       districts: {},
       query: ''
     }
   }
-
+  
   handleChange = (e) => {
     const { districtRepository } = this.state
     const { value } = e.target
     this.setState({ query: value })
-    const searchResults = districtRepository.findAllMatches(value)
+    const searchResults = this.districtRepository.findAllMatches(value)
     this.setState({ districts: searchResults })
   }
-
+  
   activeCount = () => {
     const active = Object.values(this.state.districts).filter(district => district.active)
     return active.length
   }
-
+  
   toggleActive = (location) => {
     const { districts } = this.state
     const selectedDistrict = districts[location]
@@ -55,17 +55,16 @@ class App extends Component {
       })
     } 
   }
-
+  
   componentDidMount() {
-    const districtRepository = new DistrictRepository(kinderData)
     this.setState({ 
-      districtRepository, 
-      districts: districtRepository.districts 
+      districts: this.districtRepository.districts 
     })
   }
 
   render() {
-    const { districtRepository: {findAverage, compareDistrictAverages}, districts, query } = this.state
+    const { findAverage, compareDistrictAverages } = this.districtRepository
+    const { districts, query } = this.state
     return (
       <Main>
         <h1 className='title'>Welcome To Headcount 2.0</h1>
