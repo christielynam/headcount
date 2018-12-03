@@ -32,7 +32,6 @@ class App extends Component {
   }
   
   handleChange = (e) => {
-    const { districtRepository } = this.state
     const { value } = e.target
     this.setState({ query: value })
     const searchResults = this.districtRepository.findAllMatches(value)
