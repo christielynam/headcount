@@ -27,7 +27,6 @@ class DistrictRepository {
     }
   }
 
-  // used in search functionality
   findAllMatches = (location) => {
     const fullDistrictArray = Object.values(this.districts)
     return location ? fullDistrictArray.filter(district => district.location.includes(location.toUpperCase())) : fullDistrictArray
@@ -49,6 +48,5 @@ class DistrictRepository {
       compared: this.roundToThous(compared)
     }
   }
-
 }
   export default DistrictRepository
